@@ -1,5 +1,5 @@
 from hashlib import sha256
-from decode import AadhaarOldQr,AadhaarSecureQr
+from pyaadhaar.decode import AadhaarOldQr,AadhaarSecureQr
 import cv2
 import numpy as np
 from pyzbar.pyzbar import decode

@@ -1,5 +1,5 @@
 from hashlib import sha256
-from pyaadhaar.decode import AadhaarOldQr,AadhaarSecureQr
+import pyaadhaar
 import cv2
 import numpy as np
 from pyzbar.pyzbar import decode
@@ -43,9 +43,9 @@ def AadhaarQrAuto(data):
     # create the object of respective class and will return the oobject
 
     if isSecureQr(data):
-        return AadhaarSecureQr(int(data)).decodeddata()
+        return pyaadhaar.decode.AadhaarSecureQr(int(data)).decodeddata()
     else:
-        return AadhaarOldQr(data).decodeddata()
+        return pyaadhaar.decode.AadhaarOldQr(data).decodeddata()
 
 
 def Qr_img_to_text(file):

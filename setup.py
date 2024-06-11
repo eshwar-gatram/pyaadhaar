@@ -6,7 +6,7 @@ with open("README.MD", "r", encoding="utf-8") as fh:
 setup(
     name='pyaadhaar',
     packages=find_packages(),
-    version='2.0.2',
+    version='2.0.2-3',
     description='This library is built to ease the process of decoding aadhaar QR codes and XML. It supprts old aadhaar QR codes , newly released Secure aadhaar QR codes and also Offline e-KYC XML. This library also can decode QR codes with Opncv. This library bundled with all the features to verify user\'s Email Id and Mobile Number & also to extract the photo of user. ',
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -22,16 +22,13 @@ setup(
         'Programming Language :: Python :: 3.8',
     ],
     keywords='software development aadhaar e-kyc verification',
-    python_requires='>=3.6',
+    python_requires='>=3.6,<4.0',
     install_requires=[
-        'numpy',
-        'opencv-python',
         'Pillow',
         'pylibjpeg',
         'pylibjpeg-openjpeg',
         'python-dateutil',
         'pytz',
-        'pyzbar',
         'six',
         'toml'
     ],

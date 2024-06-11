@@ -1,6 +1,6 @@
 /env/*
 .env/*
-venv
+.venv
 **/test.py
 **/tests.py
 **/__pycache__

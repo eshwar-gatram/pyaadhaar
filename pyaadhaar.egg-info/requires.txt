@@ -1,10 +1,7 @@
-numpy
-opencv-python
 Pillow
 pylibjpeg
 pylibjpeg-openjpeg
 python-dateutil
 pytz
-pyzbar
 six
 toml

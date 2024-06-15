@@ -1,8 +1,8 @@
 from hashlib import sha256
 import pyaadhaar
-import cv2
-import numpy as np
-from pyzbar.pyzbar import decode
+# import cv2
+# import numpy as np
+# from pyzbar.pyzbar import decode
 
 
 def SHAGenerator(string, n):
@@ -48,15 +48,15 @@ def AadhaarQrAuto(data):
         return pyaadhaar.decode.AadhaarOldQr(data).decodeddata()
 
 
-def Qr_img_to_text(file):
-    # This function will extract all qr codes data from image
-    # And will return a list of data of all qr codes
+# def Qr_img_to_text(file):
+#     # This function will extract all qr codes data from image
+#     # And will return a list of data of all qr codes
 
-    img = cv2.imread(file)
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    code = decode(gray)
-    totaldata = []
-    for i in code:
-        decodeddata = i.data.decode('utf-8')
-        totaldata.append(decodeddata)
-    return totaldata
+#     img = cv2.imread(file)
+#     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+#     code = decode(gray)
+#     totaldata = []
+#     for i in code:
+#         decodeddata = i.data.decode('utf-8')
+#         totaldata.append(decodeddata)
+#     return totaldata
